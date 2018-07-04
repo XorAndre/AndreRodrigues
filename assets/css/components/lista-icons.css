@@ -5,6 +5,7 @@
 .lista-icones li{
     display: block;
     margin: 1%;
+    padding: 0.5em;
 }
 @media(min-width: 48em){
     .lista-icones li{
