@@ -1,0 +1,84 @@
+.navbar{
+    background-color: #fff;
+    padding: 0.8em 0.2em;
+    position: relative;
+    width: 100%;
+}
+.navbar .responsive{
+    display: block;
+    position: absolute;
+}
+.navbar .responsive .bars{position: relative;}
+.navbar .responsive .bars, .navbar .responsive .bars:after, .navbar .responsive .bars:before{
+    background-color: #242423;    
+    width: 4em;
+}
+.navbar .responsive .bars:after, .navbar .responsive .bars:before{
+    content: "";
+    position: absolute;
+}
+.navbar .links li{
+    margin: 0.2em;
+}
+.navbar .links li>a{
+    color: #333;
+    display: block;
+    font-family: var(--quicksand);
+    font-size: 0.90em;
+    font-weight: 700;
+    padding: 0.6em;
+}
+.navbar .social a{
+    border: #24242369 0.04em solid;
+    border-radius: 50%;
+    color: #333;
+    padding: 5px 10px;
+}
+.navbar logo{
+    margin:0 auto;
+    width: 80%;
+}
+.navbar logo h1{
+    font-family: var(--roboto);
+    font-size: 2em;
+}
+.navbar .perfil{display: none;}
+@media(min-width: 48em){
+    .navbar{
+        border-left: #24242369 0.02em solid;
+        min-height: 40em;
+        padding: 3em 0.2em;
+        position: relative;
+        width: 23%;
+    }
+    .navbar .container-nav{position: fixed;}
+    .navbar .responsive{display: none;}
+    .navbar logo> h1{
+        font-size: 1.6em;
+        margin-left: 3%;
+    }
+    .navbar .foto, .navbar .links{ margin: 0 2em 1em 1em;}
+    .navbar .foto{
+        background-image: url("../../img/perfil.jpg");
+        background-position: center;
+        background-size: cover;        
+        -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        height: 10em;       
+        width: 50%;
+    }
+    .navbar .links{width: 92%;}
+    .navbar .social{
+        margin-left: 0.7em;
+        width:96%;
+    }
+    .navbar .social a{
+        display: inline-block;
+        margin: 0.6em;
+    }
+    .navbar .social a:hover{
+        background-color: #242423;
+        color: #fff;       
+    }
+    .navbar .social .icon{font-size: 1.8em;}
+}

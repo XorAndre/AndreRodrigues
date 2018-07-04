@@ -1,0 +1,14 @@
+.lista-icones{
+    margin:0 auto;
+    width: 80%;
+}
+.lista-icones li{
+    display: block;
+    margin: 1%;
+}
+@media(min-width: 48em){
+    .lista-icones li{
+        display: inline;
+    }
+    .lista-icones li> img{width: 20%;}   
+}
