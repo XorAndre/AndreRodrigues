@@ -1,6 +1,12 @@
 .bt{
+	border-radius: 3px;
+	box-shadow: var(--sombra-leve);
 	color: #fff;
 	display: inline-block;
 	font-size: 0.80em;
 	font-weight: 600;
+	padding:0.5em 1em;
+}
+.bt-blue{
+	
 }
