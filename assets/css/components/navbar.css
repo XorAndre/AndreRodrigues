@@ -38,9 +38,9 @@
     width: 80%;
 }
 .navbar .social a{
-    border: #24242369 0.04em solid;
+    border: var(--azul-claro) 0.04em solid;
     border-radius: 50%;
-    color: #333;
+    color: var(--azul-claro);
     display: inline-block;
     margin:0.8em 0;
     padding: 7px 10px;
@@ -94,8 +94,9 @@
         padding: 5px 10px;
     }
     .navbar .social a:hover{
-        background-color: #242423;
-        color: #fff;       
+        background-color: var(--azul-claro);
+        color: #fff;   
+        transition: 1s linear background-color;    
     }
     .navbar .social .icon{font-size: 1.9em;}
 }
