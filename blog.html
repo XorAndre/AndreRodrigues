@@ -22,38 +22,43 @@
 	</head>
 	<body>		
 		<main class="main" role="main">
-			<nav class="navbar">
+		<nav class="navbar">
 				<div class="config-theme">
 					<button class="theme-options" id="escolha" title="Configuração do tema">
 						<i class="icon ion-md-more"></i>
-					</button><!--/action-->
-					<select class="lang-option" name="" id="lang" title="LANG">
-						<option value="">PT-BR</option>
-						<option value="">ES</option>
-						<option value="">IN</option>
-					</select>
-				</div><!--/config-theme-->
-				<div class="container-nav">					
-					<div class="foto" title="Foto Perfil" alt="foto-do-perfil"></div><!--/perfil-foto-->
-					<logo><h1>ANDRÉ RODRIGUES</h1></logo><!--/perfil-nome-->
-					<div class="responsive"><div class="bars"></div></div><!--/responsive-->
-					<ul class="links" role="navigation">
-						<li><a href="index.html#top" title="Link início do site">Home</a></li>
-						<li><a href="index.html#about" title="Sobre o autor">About me</a></li>
-						<li><a href="index.html#projetos" title="Projetos realizados">Projetos Pessoais</a></li>
-						<li><a href="index.html#contribuicoes" title="Contribuições">Contribuições</a></li>
-						<li><a href="index.html#palestras" title="Contato para palestrar">Quer me chamar para palestrar :) ?</a></li>
-						<li><a href="blog.html" title="Link para blog">Blog</a></li>
-					</ul><!--/Links-->
-					<ul class="social">
-						<h3>ACESSE MINHAS REDES SOCIAIS</h3>
-						<a href="" target="_blank" title="Facebook"><i class="icon ion-logo-facebook"></i></a>
-						<a href="" target="_blank" title="Google"><i class="icon ion-logo-google"></i></a>
-						<a href="" target="_blank" title="Linkedin"><i class="icon ion-logo-linkedin"></i></a>
-						<a href="" target="_blank" title="Twitter"><i class="icon ion-logo-twitter"></i></a>
-					</ul>
-				</div><!--/container-nav-->
-			</nav><!--/navbar-->			
+					</button>
+					<div class="container-config" id="revela-escolha">
+						<h3>CORES DO LAYOUT</h3>
+						<button class="bt bt-blue" id="none">PADRÃO</button>
+						<button class="bt bt-blue" id="escuro">ESCURO</button>
+					</div>                
+				</div>
+				<div class="container-nav">
+					<div class="foto" title="Foto Perfil" alt="foto-do-perfil"></div>
+					<logo>
+						<h1>ANDRÉ RODRIGUES</h1> </logo>
+					<div class="responsive" id="click-menu">
+						<div class="bars"></div>
+					</div>
+					<div class="links-container" id="mostrar">
+						<ul class="links" role="navigation">
+							<li><a href="#top" title="Link início do site">Home</a></li>
+							<li><a href="#about" title="Sobre o autor">About me</a></li>
+							<li><a href="#projetos" title="Projetos realizados">Projetos Pessoais</a></li>
+							<li><a href="#contribuicoes" title="Contribuições">Contribuições</a></li>
+							<li><a href="#palestras" title="Contato para palestrar">Quer me chamar para palestrar :) ?</a></li>
+							<li><a href="blog.html" title="Link para blog">Blog</a></li>
+							<h3>FERRAMENTAS ONLINE</h3>
+							<li><a href="geradorCrud.html" title="Link para blog">GERADOR DE CRUD</a></li>
+							<li><a href="blog.html" title="Link para blog">GERADOR DE COMPONENTES</a></li>
+						</ul>
+						<div class="container-social">
+							<h3>ACESSE MINHAS REDES SOCIAIS</h3>
+							<ul class="social"> <a href="https://www.facebook.com/Andre-Laurentino-Rodrigues-Xor-799179646936327/" target="_blank" title="Facebook"><i class="icon ion-logo-facebook"></i></a> <a href="https://plus.google.com/u/0/" target="_blank" title="Google"><i class="icon ion-logo-google"></i></a> <a href="https://www.linkedin.com/in/andre-laurentino-761855155/" target="_blank" title="Linkedin"><i class="icon ion-logo-linkedin"></i></a> <a href="https://twitter.com/AndreXor2017" target="_blank" title="Twitter"><i class="icon ion-logo-twitter"></i></a></ul>
+						</div>
+					</div>
+				</div>
+			</nav><!--/nav-->		
 			<section class="contents">
 				<header class="header" id="top">
 					<div class="overlay">
@@ -72,7 +77,41 @@
                             <div class="col-12">
 								<h2>DESTAQUES</h2>								
                             </div>
-                        </div>
+						</div>
+						<div class="row">
+							<div class="col-6">
+								<div class="card sombra">
+									<div class="card-header">
+										<h3>Angular 7, mas já?</h3>
+									</div>
+									<div class="card-body">
+										<figure>
+											<img src="https://moduscreate.com/wp-content/uploads/2018/03/angular-7.0-top-4-changes.jpg" alt="Imagem-Angula-7">
+											<figcaption>
+												<p>Imagem retirada do site Modus</p>
+											</figcaption>
+										</figure>
+										<a class="bt bt-blue" href="">CONFIRA O ARTIGO</a>
+									</div>
+								</div>
+							</div><!--/grid-card-->
+							<div class="col-6">
+								<div class="card sombra">
+									<div class="card-header">
+										<h3>Trabalhando com Electron e VueJS</h3>
+									</div>
+									<div class="card-body">
+										<figure>
+											<img src="https://simulatedgreg.gitbooks.io/electron-vue/content/images/logo.png" alt="Imagem-Electron">
+											<figcaption>
+												<p>Imagem retirada do site Modus</p>
+											</figcaption>
+										</figure>
+										<a class="bt bt-blue" href="">CONFIRA O ARTIGO</a>
+									</div>
+								</div>
+							</div><!--/grid-card-->
+						</div>
                     </div>
                 </article><!--/Article-->
 			</section>
