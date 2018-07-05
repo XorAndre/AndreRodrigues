@@ -1,7 +1,8 @@
 .navbar{
     background-color: #fff;
+    box-shadow: var(--sombra-leve);
     padding: 0.8em 0.2em;
-    position: relative;
+    position: fixed;
     width: 100%;
 }
 .navbar .responsive{
@@ -12,9 +13,9 @@
 }
 .navbar .responsive .bars{position: relative;}
 .navbar .responsive .bars, .navbar .responsive .bars:after, .navbar .responsive .bars:before{
-    background-color: #242423;
+    background-color: #2196f3;
     height: 0.2em;
-    width: 2em;
+    width: 1.6em;
 }
 .navbar .responsive .bars:after, .navbar .responsive .bars:before{
     content: "";
@@ -26,8 +27,8 @@
 .navbar .links li>a{
     color: #333;
     display: block;
-    font-family: var(--quicksand);
-    font-size: 0.80em;
+    font-family: var(--roboto);
+    font-size: 0.68em;
     font-weight: bold;
     padding: 0.6em;
     text-transform: uppercase;
@@ -42,13 +43,13 @@
     color: #333;
     display: inline-block;
     margin:0.8em 0;
-    padding: 5px 10px;
+    padding: 7px 10px;
 }
 .navbar logo{margin:0 auto;width: 80%;}
 .navbar logo h1{
     font-family: var(--roboto);
     font-size: 1.2em;
-    margin-left: 6%;
+    margin-left: 4%;
 }
 .navbar .links h3, .navbar .container-social h3{margin-left: 3%;}
 .navbar .perfil{display: none;}
@@ -90,6 +91,7 @@
     .navbar .social a{
         display: inline-block;
         margin: 0.5em;
+        padding: 5px 10px;
     }
     .navbar .social a:hover{
         background-color: #242423;

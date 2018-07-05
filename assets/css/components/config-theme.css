@@ -11,10 +11,21 @@
     padding: 0.8em; 
 } 
 .config-theme .theme-options i{color: #333;font-size: 2em;}
-/*langoption*/
-.lang-option{display: none; padding: 0.5em 0.2em;}
+/*color-option*/
+.config-theme .container-config{
+    background-color: #fff;
+    display: none;
+    min-width: 41vw;
+    max-width: 41vw; 
+    padding: 0.5em 0.2em;
+    position: absolute;
+    right: 0.2em;
+}
+.container-config button{display: block;}
+.escuro{background-color: #275173;}
+.escuro article .row{background-color:#fff;}
 /*Desktop*/
 @media(min-width: 48em){
     .config-theme{top:0;width: 30%;}
-    .config-theme .theme-options{margin-left: 3em;}
+    .config-theme .theme-options, .config-theme .container-config{display: none;}    
 }
