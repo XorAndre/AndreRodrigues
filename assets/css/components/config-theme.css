@@ -1,8 +1,8 @@
 .config-theme {
     position: absolute;
     right: 0.2em;
-    top: 0;
-    width: 30%;
+    top: -0.38em;
+    width: 7%;
 }
 .config-theme .theme-options{
     border: none;
@@ -10,18 +10,11 @@
     display: inline-block;    
     padding: 0.8em; 
 } 
-.config-theme .theme-options i{
-    color: #333;
-    font-size: 2em;
-}
+.config-theme .theme-options i{color: #333;font-size: 2em;}
 /*langoption*/
-.lang-option{
-    display: none;
-    padding: 0.5em 0.2em;
-}
+.lang-option{display: none; padding: 0.5em 0.2em;}
 /*Desktop*/
 @media(min-width: 48em){
-    .config-theme .theme-options{
-        margin-left: 3em;
-    }
+    .config-theme{top:0;width: 30%;}
+    .config-theme .theme-options{margin-left: 3em;}
 }

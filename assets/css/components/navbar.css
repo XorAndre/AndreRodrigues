@@ -1,25 +1,28 @@
 .navbar{
     background-color: #fff;
-    padding: 0.2em 0.2em;
+    padding: 0.8em 0.2em;
     position: relative;
     width: 100%;
 }
 .navbar .responsive{
     display: block;
     position: absolute;
+    right: 2.3em;
+    top: 1.3em;
 }
 .navbar .responsive .bars{position: relative;}
 .navbar .responsive .bars, .navbar .responsive .bars:after, .navbar .responsive .bars:before{
-    background-color: #242423;    
-    width: 4em;
+    background-color: #242423;
+    height: 0.2em;
+    width: 2em;
 }
 .navbar .responsive .bars:after, .navbar .responsive .bars:before{
     content: "";
     position: absolute;
 }
-.navbar .links li{
-    margin: 0.2em;
-}
+.navbar .responsive .bars:after{top: -0.5em;}
+.navbar .responsive .bars:before{bottom: -0.5em;}
+.navbar .links li{margin: 0.2em;}
 .navbar .links li>a{
     color: #333;
     display: block;
@@ -41,9 +44,10 @@
 }
 .navbar logo h1{
     font-family: var(--roboto);
-    font-size: 2em;
+    font-size: 1.2em;
 }
 .navbar .perfil{display: none;}
+.navbar .container-nav .links, .navbar .container-nav .social{display: none;}
 @media(min-width: 48em){
     .navbar{
         border-left: #24242369 0.02em solid;
@@ -53,7 +57,9 @@
         width: 23%;
     }
     .navbar .container-nav{position: fixed;}
+    .navbar .container-nav .links, .navbar .container-nav .social{display: block;}
     .navbar .responsive{display: none;}
+    .navbar logo h1{font-size: 2em;}
     .navbar logo> h1, .navbar .links h3, .navbar .social h3{margin-left: 3%;} 
     .navbar logo> h1{font-size: 1.6em;}
     .navbar .foto, .navbar .links{ margin: 0 2em 1em 1em;}
