@@ -14,9 +14,10 @@
 /*color-option*/
 .config-theme .container-config{
     background-color: #fff;
+    box-shadow: var(--sombra-leve);
     display: none;
-    min-width: 41vw;
-    max-width: 41vw; 
+    min-width: 50vw;
+    max-width: 50vw; 
     padding: 0.5em 0.2em;
     position: absolute;
     right: 0.2em;
