@@ -20,6 +20,9 @@ $(document).ready(function(){
 $("#escuro").click(function(){
     $("#fundo-escuro").addClass("escuro");
 });
+$("#none").click(function(){
+    $("#fundo-escuro").removeClass("escuro");
+});
 //Code editor
 $(document).ready(function(){$('pre').makeCode({style: 'code-style-dark', addons: [{ name: 'js', parser: javascriptCode }]});});
 let javascriptCode = function(text) {return text;};
