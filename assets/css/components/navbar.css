@@ -32,22 +32,31 @@
     padding: 0.6em;
     text-transform: uppercase;
 }
+.navbar .container-social .social{
+    margin-left: 3%;    
+    width: 80%;
+}
 .navbar .social a{
     border: #24242369 0.04em solid;
     border-radius: 50%;
     color: #333;
+    display: inline-block;
+    margin:0.8em 0;
     padding: 5px 10px;
 }
-.navbar logo{
-    margin:0 auto;
-    width: 80%;
-}
+.navbar logo{margin:0 auto;width: 80%;}
 .navbar logo h1{
     font-family: var(--roboto);
     font-size: 1.2em;
+    margin-left: 6%;
 }
+.navbar .links h3, .navbar .container-social h3{margin-left: 3%;}
 .navbar .perfil{display: none;}
-.navbar .container-nav .links, .navbar .container-nav .social{display: none;}
+.navbar .links-container{
+    display: none;
+    min-height: 12em;
+    padding:0.6em;
+}
 @media(min-width: 48em){
     .navbar{
         border-left: #24242369 0.02em solid;
@@ -57,10 +66,10 @@
         width: 23%;
     }
     .navbar .container-nav{position: fixed;}
-    .navbar .container-nav .links, .navbar .container-nav .social{display: block;}
+    .navbar .links-container{display: block;}
     .navbar .responsive{display: none;}
     .navbar logo h1{font-size: 2em;}
-    .navbar logo> h1, .navbar .links h3, .navbar .social h3{margin-left: 3%;} 
+    .navbar logo> h1{margin-left: 3%;} 
     .navbar logo> h1{font-size: 1.6em;}
     .navbar .foto, .navbar .links{ margin: 0 2em 1em 1em;}
     .navbar .foto{
