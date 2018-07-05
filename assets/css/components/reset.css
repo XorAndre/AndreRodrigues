@@ -13,9 +13,9 @@ audio, img, iframe, video{
 * body::-webkit-scrollbar-track{background-color: #F4F4F4;}
 * body::-webkit-scrollbar {
   width: 6px;
-  background: #f4f4f4;
+  background-color: var(--azul-claro);
 }
-* body::-webkit-scrollbar-thumb {background: #dad7d7;}
+* body::-webkit-scrollbar-thumb{background-color: var(--azul-claro);}
 * li{list-style-type: none;}
 .container, .main, .contents, .row{
 	display: flex;
