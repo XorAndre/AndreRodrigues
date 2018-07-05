@@ -24,9 +24,10 @@
     color: #333;
     display: block;
     font-family: var(--quicksand);
-    font-size: 0.90em;
-    font-weight: 700;
+    font-size: 0.80em;
+    font-weight: bold;
     padding: 0.6em;
+    text-transform: uppercase;
 }
 .navbar .social a{
     border: #24242369 0.04em solid;
@@ -47,16 +48,14 @@
     .navbar{
         border-left: #24242369 0.02em solid;
         min-height: 40em;
-        padding: 3em 0.2em;
+        padding: 1em 0.2em;
         position: relative;
         width: 23%;
     }
     .navbar .container-nav{position: fixed;}
     .navbar .responsive{display: none;}
-    .navbar logo> h1{
-        font-size: 1.6em;
-        margin-left: 3%;
-    }
+    .navbar logo> h1, .navbar .links h3, .navbar .social h3{margin-left: 3%;} 
+    .navbar logo> h1{font-size: 1.6em;}
     .navbar .foto, .navbar .links{ margin: 0 2em 1em 1em;}
     .navbar .foto{
         background-image: url("../../img/perfil.jpg");

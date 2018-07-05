@@ -1,12 +1,16 @@
 .bt{
 	border-radius: 3px;
 	box-shadow: var(--sombra-leve);
+	border-style: solid;
+	border-width: 1px;
 	color: #fff;
 	display: inline-block;
+	font-family: var(--arial);
 	font-size: 0.80em;
 	font-weight: 600;
-	padding:0.5em 1em;
+	margin: 0.8em 0;
+	padding:0.8em 1em;
 }
 .bt-blue{
-	
+	background-color: var(--azul-claro);
 }

@@ -2,7 +2,7 @@
     margin: 0 auto;
     width: 90%;
 }
-[class*="col-"]{padding: 0.8em 0.2em;}
+[class*="col-"]{padding: 0.8em 0.9em;}
 .row{margin-top: 1em;}
 @media(min-width: 48em){
     .col-1 {width: 8.33%;}

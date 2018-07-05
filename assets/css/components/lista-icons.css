@@ -5,10 +5,10 @@
 .lista-icones li{
     display: block;
     margin: 1%;
-    padding: 0.5em;
+    padding: 0.5em 0;
 }
 @media(min-width: 48em){
-    .lista-icones{width: 35%;}
+    .lista-icones{width: 50%;}
     .lista-icones li{display: inline;}
-    .lista-icones li> img{width: 20%;}   
+    .lista-icones li> img{width: 22%;}   
 }
