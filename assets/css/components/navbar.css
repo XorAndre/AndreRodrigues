@@ -82,17 +82,18 @@
         width: 50%;
     }
     .navbar .links{width: 92%;}
-    .navbar .social{
+    .navbar .container-social h3{margin-left: 9%;}
+    .navbar .container-social .social{
         margin-left: 0.7em;
-        width:96%;
+        width:100%;
     }
     .navbar .social a{
         display: inline-block;
-        margin: 0.6em;
+        margin: 0.5em;
     }
     .navbar .social a:hover{
         background-color: #242423;
         color: #fff;       
     }
-    .navbar .social .icon{font-size: 1.8em;}
+    .navbar .social .icon{font-size: 1.9em;}
 }
