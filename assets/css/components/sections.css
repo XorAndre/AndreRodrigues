@@ -1,4 +1,1 @@
-@media(min-width: 48em){
-    .contents{width: 77%;}
-    .contents article{padding: 2em 3em;}
-}
+@media(min-width:48em){.contents{width:77%}.contents article{padding:2em 3em}}

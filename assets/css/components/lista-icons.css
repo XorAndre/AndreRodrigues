@@ -1,18 +1,1 @@
-.lista-icones{
-    margin:0 auto;
-    width: 80%;
-}
-.lista-icones li{
-    border-bottom: 0.1em #e0dbdb solid;
-    display: block;
-    margin: 1%;
-    padding: 0.5em 0;
-}
-@media(min-width: 48em){
-    .lista-icones{width: 50%;}
-    .lista-icones li{
-        border-bottom: none;
-        display: inline;
-    }
-    .lista-icones li> img{width: 22%;}   
-}
+.lista-icones{margin:0 auto;width:80%}.lista-icones li{border-bottom:.1em #e0dbdb solid;display:block;margin:1%;padding:.5em 0}@media(min-width:48em){.lista-icones{width:50%}.lista-icones li{border-bottom:none;display:inline}.lista-icones li>img{width:22%}}

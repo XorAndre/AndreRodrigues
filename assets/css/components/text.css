@@ -1,15 +1,1 @@
-h1, h2, h3, h4, h4{
-    font-family: var(--roboto);
-    text-transform: uppercase;    
-}
-h2{font-size: 2em;}
-p{
-    font-family: var(--arial);
-    font-size: 1.2em;
-}
-.text-cente{text-align: center;}
-.text-left{text-align: left;}
-.text-right{text-align: right;}
-@media(min-width: 48em){
-    h1, h2{text-align: center;}
-}
+h1,h2,h3,h4,h4{font-family:var(--roboto);text-transform:uppercase}h2{font-size:2em}p{font-family:var(--arial);font-size:1.2em}.text-cente{text-align:center}.text-left{text-align:left}.text-right{text-align:right}@media(min-width:48em){h1,h2{text-align:center}}
