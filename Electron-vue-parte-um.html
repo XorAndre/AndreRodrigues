@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="cleartype" content="on">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Electron & Vue primeira parte</title>
+		<!--CSS-->
+		<link href="assets/css/main.css" rel="stylesheet">
+		<link href="https://unpkg.com/ionicons@4.2.4/dist/css/ionicons.min.css" rel="stylesheet">
+		<!--SEO-->
+		<link rel="canonical" href="Electron-vue-parte-um.html">
+		<meta name="robots" content="index, follow">
+		<meta name="author" content="André Rodrigues(Xor)">
+		<meta name="description" content="Veja como começar a desenvolver com Electron">
+		<meta name="keywords" content="Vue, vuejs, Electron, electronjs, Frameworks, desenvolva aplicações desktop">
+		<meta name="revisit-after" content="1 day">
+		<meta name="generator" content="N/A">
+	</head>
+	<body>		
+		<main class="main" role="main">
+		<nav class="navbar">
+				<div class="config-theme">
+					<button class="theme-options" id="escolha" title="Configuração do tema">
+						<i class="icon ion-md-more"></i>
+					</button>
+					<div class="container-config" id="revela-escolha">
+						<h3>CORES DO LAYOUT</h3>
+						<button class="bt bt-blue" id="none">PADRÃO</button>
+						<button class="bt bt-blue" id="escuro">ESCURO</button>
+					</div>                
+				</div>
+				<div class="container-nav">
+					<div class="foto" title="Foto Perfil" alt="foto-do-perfil"></div>
+					<logo>
+						<h1>ANDRÉ RODRIGUES</h1> </logo>
+					<div class="responsive" id="click-menu">
+						<div class="bars"></div>
+					</div>
+					<div class="links-container" id="mostrar">
+						<ul class="links" role="navigation">
+							<li><a href="index.html#top" title="Link início do site">Home</a></li>
+							<li><a href="index.html#about" title="Sobre o autor">About me</a></li>
+							<li><a href="index.html#projetos" title="Projetos realizados">Projetos Pessoais</a></li>
+							<li><a href="index.html#contribuicoes" title="Contribuições">Contribuições</a></li>
+							<li><a href="index.html#palestras" title="Contato para palestrar">Quer me chamar para palestrar :) ?</a></li>
+							<li><a href="index.htmlblog.html" title="Link para blog">Blog</a></li>
+							<h3>FERRAMENTAS ONLINE</h3>
+							<li><a href="geradorCrud.html" title="Link para blog">GERADOR DE CRUD</a></li>
+							<li><a href="blog.html" title="Link para blog">GERADOR DE COMPONENTES</a></li>
+						</ul>
+						<div class="container-social">
+							<h3>ACESSE MINHAS REDES SOCIAIS</h3>
+							<ul class="social"> <a href="https://www.facebook.com/Andre-Laurentino-Rodrigues-Xor-799179646936327/" target="_blank" title="Facebook"><i class="icon ion-logo-facebook"></i></a> <a href="https://plus.google.com/u/0/" target="_blank" title="Google"><i class="icon ion-logo-google"></i></a> <a href="https://www.linkedin.com/in/andre-laurentino-761855155/" target="_blank" title="Linkedin"><i class="icon ion-logo-linkedin"></i></a> <a href="https://twitter.com/AndreXor2017" target="_blank" title="Twitter"><i class="icon ion-logo-twitter"></i></a></ul>
+						</div>
+					</div>
+				</div>
+			</nav><!--/nav-->		
+			<section class="contents">
+				<header class="header" id="top">
+					<div class="overlay">
+						<div class="container">
+							<div class="row">
+								<div class="col-12">
+									<h2>Olá amigo, seja bem vindo ao meu site!</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header><!--/header-->
+				<article>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2>Electron e Vue (Parte-1)</h2>								
+                            </div>
+						</div>
+						<div class="row">							
+							<div class="col-12"> 
+                                <p>
+                                    Antes de começar sobre os Frameworks Electron e Vue, gostaria de dizer que as postagens foram divididas. 
+                                    Fiz isso para que não ficasse grande de ler. Espero que goste do material. Qualquer dúvida me mande uma mensagem em meu Facebook.
+                                </p>                           
+                                <p>
+                                    Você já imaginou desenvolver aplicações desktop de maneira simples só trabalhando com códigos web CSS, HTML e JavaScript? Se você já pensou nisso, mas nunca viu sobre algo que fale sobre isso, hoje estarei falando sobre o Electron um incrível framework desenvolvido pelo pessoal do GitHub. E para você que já conhece um pouco desse framework irei ensinar como é possível incrementar O VueJS e também listar dados vindos do Mysql. Bom sem mais delongas, vamos ao nosso post.
+                                </p>
+                                <h3>O Electron</h3>
+                                <p>
+                                   Como já foi dito no parágrafo anterior, o Electron é um framework voltado para aplicações desktop. Ele foi desenvolvido a partir das tecnologias NodeJS e Chromium. Você pode criar este framework projetos para os sistemas Linux, Mac e Windows. Caso queira ler a documentação, o link é este: (link).
+                                </p>
+                                <h3>Primeiros Passos</h3>
+                                <p>
+                                    Para trabalhar com o Electron é necessário ter em seu computador já instalado o NodeJS e terminal funcionando corretamente. Caso você utilize Windows, eu aconselho que baixe o CMDER e não use CMD, pois, o CMD infelizmente chega a dar uns bugs na hora de baixar pacotes e até mesmo compilar. Feito as instalações abra o seu terminal e digite os seguintes comandos: npm -i –g electron-prebuilt, aguarde até que todos os pacotes estejam baixados.
+                                </p>
+                                <h3>Estrutura de diretórios</h3>
+                                <p>
+                                    No Electron temos algumas pastas que são essenciais para que nosso projeto rode 100%. São elas: node_modules onde irão conter nossos pacotes que baixaremos pelo npm como Vue e Mysql, pasta assets que criaremos para armazenar nosso CSS, JavaScript e imagens e uma chamada views que irá ter nossas páginas. 
+                                </p>
+                                <h3>Arquivos</h3>
+                                <h4>Index.html</h4>
+                                <p>
+                                    O arquivo index.html irá exibir a tela inicial da aplicação. Por padrão o Electron disponibiliza um “Hello World”, para mostrar o funcionamento do Framework. Se você abrir o index.html em um editor verá que não tem nada de tão complicado. São simples chamadas de JavaScript, CSS e alguns HTML. 
+                                </p>
+                                <h4>Package.json</h4>
+                                <p>
+                                    O arquivo index.html irá exibir a tela inicial da aplicação. Por padrão o Electron disponibiliza um “Hello World”, para mostrar o funcionamento do Framework. Se você abrir o index.html em um editor verá que não tem nada de tão complicado. São simples chamadas de JavaScript, CSS e alguns HTML. 
+                                </p>
+                                <h3>Exemplo do package.json</h3>
+                                <pre class="syntax-html">
+                                    {
+                                        "name": "Nome-projeto",
+                                        "version": "versao-gerada-automaticamente",
+                                        "description": "Descricao-projeto",
+                                        "main": "index.js",
+                                        "scripts": {
+                                          "test": "echo \"Error: no test specified\" && exit 1"
+                                        },
+                                        "repository": {
+                                          "type": "git",
+                                          "url": "Link-Github"
+                                        },
+                                        "keywords": [
+                                          "Palavra-chave-um",
+                                          "Palavra-chave-dois",
+                                          "Palavra-chave-tres",
+                                          "Palavra-chave-quatro",
+                                          "Palavra-chave-cinco"
+                                        ],
+                                        "author": "Nome-Autor",
+                                        "license": "ISC",
+                                        "bugs": {
+                                          "url": "Links-para-Issues"
+                                        },
+                                        "homepage": "Link-readme-Github",
+                                        "dependencies": {
+                                          "pacote-baixado": "Versao-usada"
+                                        }
+                                      }
+                                </pre>
+                                <h4>Main.js</h4>
+                                <p>
+                                    Este arquivo em JavaScript é onde se encontra o coração de nossa aplicação. Nele são definidas larguras da janela, altura, nome da aplicação e também podemos também adicionar um ícone e retirar a barra de menu padrão que vem com Electron. 
+                                </p>
+							</div><!--/grid-card-->
+						</div>
+                    </div>
+                </article><!--/Article-->
+			</section>
+        </main><!--/main-->
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/main.js"></script>
+	</body>
+</html>
