@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+    font-size: 100%;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+}
+* a, * a:hover{text-decoration: none;}
+audio, img, iframe, video{
+    display: inline-block;
+    width: 100%;
+}
+/*Flex containers*/
+.main, .navbar{
+    display: flex;
+    flex-direction: column;
+}

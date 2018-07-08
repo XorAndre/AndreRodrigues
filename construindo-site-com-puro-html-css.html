@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="cleartype" content="on">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Construindo um site legal com apenas CSS e HTML</title>
+		<!--CSS-->
+		<link href="assets/css/main.css" rel="stylesheet">
+		<link href="https://unpkg.com/ionicons@4.2.4/dist/css/ionicons.min.css" rel="stylesheet">
+		<!--SEO-->
+		<link rel="canonical" href="construindo-site-com-puro-html-css.html">
+		<meta name="robots" content="index, follow">
+		<meta name="author" content="André Rodrigues(Xor)">
+		<meta name="description" content="Veja como é simples criar uma página para seu site usando apenas CSS e HTML">
+		<meta name="keywords" content="Como fazer um site, desenvolvendo páginas para web, sites, html, html5, css, css3">
+		<meta name="revisit-after" content="1 day">
+		<meta name="generator" content="N/A">
+	</head>
+	<body>		
+		<main class="main" role="main">
+		<nav class="navbar">
+				<div class="config-theme">
+					<button class="theme-options" id="escolha" title="Configuração do tema">
+						<i class="icon ion-md-more"></i>
+					</button>
+					<div class="container-config" id="revela-escolha">
+						<h3>CORES DO LAYOUT</h3>
+						<button class="bt bt-blue" id="none">PADRÃO</button>
+						<button class="bt bt-blue" id="escuro">ESCURO</button>
+					</div>                
+				</div>
+				<div class="container-nav">
+					<div class="foto" title="Foto Perfil" alt="foto-do-perfil"></div>
+					<logo>
+						<h1>ANDRÉ RODRIGUES</h1> </logo>
+					<div class="responsive" id="click-menu">
+						<div class="bars"></div>
+					</div>
+					<div class="links-container" id="mostrar">
+						<ul class="links" role="navigation">
+							<li><a href="index.html#top" title="Link início do site">Home</a></li>
+							<li><a href="index.html#about" title="Sobre o autor">About me</a></li>
+							<li><a href="index.html#projetos" title="Projetos realizados">Projetos Pessoais</a></li>
+							<li><a href="index.html#contribuicoes" title="Contribuições">Contribuições</a></li>
+							<li><a href="index.html#palestras" title="Contato para palestrar">Quer me chamar para palestrar :) ?</a></li>
+							<li><a href="index.htmlblog.html" title="Link para blog">Blog</a></li>
+							<h3>FERRAMENTAS ONLINE</h3>
+							<li><a href="geradorCrud.html" title="Link para blog">GERADOR DE CRUD</a></li>
+							<li><a href="blog.html" title="Link para blog">GERADOR DE COMPONENTES</a></li>
+						</ul>
+						<div class="container-social">
+							<h3>ACESSE MINHAS REDES SOCIAIS</h3>
+							<ul class="social"> <a href="https://www.facebook.com/Andre-Laurentino-Rodrigues-Xor-799179646936327/" target="_blank" title="Facebook"><i class="icon ion-logo-facebook"></i></a> <a href="https://plus.google.com/u/0/" target="_blank" title="Google"><i class="icon ion-logo-google"></i></a> <a href="https://www.linkedin.com/in/andre-laurentino-761855155/" target="_blank" title="Linkedin"><i class="icon ion-logo-linkedin"></i></a> <a href="https://twitter.com/AndreXor2017" target="_blank" title="Twitter"><i class="icon ion-logo-twitter"></i></a></ul>
+						</div>
+					</div>
+				</div>
+			</nav><!--/nav-->		
+			<section class="contents">
+				<header class="header" id="top">
+					<div class="overlay">
+						<div class="container">
+							<div class="row">
+								<div class="col-12">
+									<h2>Olá amigo, seja bem vindo ao meu site!</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header><!--/header-->
+				<article>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2>Construir um site legal só com CSS e HTML</h2>								
+                            </div>
+						</div>
+						<div class="row">							
+							<div class="col-12">                            
+                                <img src="https://img.portalgsti.com.br/KtVYioRHHtRjYbfL2a9uqW6rbIo=/670x440/https://www.portalgsti.com.br/media/uploads/course/jorge-sant-ana-e-jamilton-damasceno/2017/01/19/curso-desenvolvimento-web.jpg" alt="Imagem-site-CSS-HTML">
+                                <p>
+                                	Este post é sobre até onde podemos chegar usando somente HTML e CSS na construção de uma página. Além de desenvolvermos uma página do zero, eu também irei dar dicas de como deixar o CSS e HTML fiarem legais e de fácil manutenção. O post foi dividido em várias partes, pois, o conteúdo ficou grande. Sem mais delongas vamos lá amiguinho. <br>
+ 									Não é segredo para ninguém que hoje podemos fazer boa parte de efeitos usando CSS coisa que antes só era possível com Action Script e JavaScript. Se você é iniciante nesse mundo da web e está no nível base do CSS, aqui nesse post você o tão incrível é o CSS e se você já conhece sobre as propriedades que do CSS dispõe para os desenvolvedores, fique à vontade para fazer um filtro de dicas para deixar seus projetos ainda mais legais. 
+
+                                </p><br>
+                                <h3>INICIANDO</h3><br>
+                                <p>
+                                	 Crie uma pasta chamada meu_site. Dentro dela crie uma segunda pasta com nome de assets, feito essas duas etapas abra a pasta assets e crie mais duas pastas com o nome css, e img. Explicando rapidinho sobre os diretórios criados a pasta central de nosso site será meu_site logo após temos a assets que irá nos permitir trabalhar de forma organizada armazenando dentro dela imagens e nossas folhas de estilo. Caso esteja com dificuldades para criar a ordem das pastas, abaixo está um exemplo de como deverá ficar a ordem dos diretórios.
+                                </p><br>
+								<img src="assets/img/print-html.png" alt="print-de-editor-com-ordem-das-pastas"><br><br>
+                                <h3>INICIANDO NOSSOS CÓDIGOS</h3><br>
+                                <p>
+                                	No seu editor crie um arquivo de nome index.html. Para nos poupar tempo, pois, creio que você já saiba um pouco de HTML, copie o código abaixo em seu arquivo HTML.
+                                </p>
+								<pre class="syntax-html">
+<!--Remova o comentário para o código funcionar                                
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Este é meu site</title>
+    </head>
+
+    <body>
+        
+    </body>
+</html>
+-->
+                                </pre><br>
+                                <h3>Estruturando nossa página</h3><br>
+                                <p>
+                                	Agora iremos começar realmente a dar cara a nossa página. Iremos começar com o seguinte código:
+                                </p><br>
+                                <pre class="syntax-html">
+                                	<main class="main" role="main">
+                                		<nav class="navbar">
+                                			<div class="logo">
+                                				<h1>PIZZAS DO PAPA-JOHNS</h1>
+                                			</div>
+                                			<ul class="links">
+                                				<li><a href="">INÍCIO</a></li>
+                                				<li><a href="">CONHEÇA A-PIZZARIA</a></li>
+                                				<li><a href="">NOSSO MENU</a></li>
+                                				<li><a href="">CONTATO</a></li>
+                                			</ul>
+                                		</nav><!--/MENU-->	
+                                	</main><!--/main-->
+                                </pre><br>                               
+                                <p>
+                                	 Acima escrevemos alguns trechos de html, são eles main o nosso container principal e nav que irá nos permitir a navegação de nosso site. Agora iremos iniciar a mágica que irá deixar nosso site com uma aparência legal. Para que isso aconteça crie uma pasta dentro do diretório CSS chamada componentes, e nela crie um arquivo com nome de reset.css. Nele iremos colocar estilos globais de nossa página web, o código deverá ficar assim:
+                                </p><br>
+                                <pre class="syntax-html">
+*{
+    box-sizing: border-box;
+    font-size: 100%;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+}
+* a, * a:hover{text-decoration: none;}
+audio, img, iframe, video{
+    display: inline-block;
+    width: 100%;
+}
+                                </pre><br>	
+                                <p>
+                                	 Se você já sabe um pouco sobre CSS, deve estar se perguntando “Mas por que dividirmos assim o CSS? ”, isso irá nos permitir um crescimento isolado de cada componente facilitando os nossos suportes, e fica aí a primeira dica para você usar em seus projetos a partir agora ;) . Agora para começarmos a ver o resultado devemos criar um arquivo que vai importar esses componentes, o nome desse arquivo será mai.css, este arquivo deverá ser salvo na pasta css e não dentro da pasta onde irá ficar nossos componentes. Para que não fique confuso segue abaixo um print da ordem de nossos arquivos dentro de suas pastas.
+                                </p><br>
+                                <img src="assets/img/print-html-2.png" alt="print-de-editor-com-ordem-de-arquivos-nas-pastas"><br><br>
+                                <h3>Importando nossos componentes</h3><br>
+                                <p>
+                                	Nessa parte iremos importar nossos componentes. Para importar nosso arquivo reset que criamos, escreva o seguinte código no arquivo main.css:
+                                </p>
+                                <pre class="syntax-html">
+                                @import url("componentes/reset.css");	
+                                </pre>
+                                <p>
+                                	 Agora vá em seu navegador na página que estamos criando e atualize ela. Para finalizarmos por hora o nosso reset, iremos escrever as seguintes regras globais:
+                                </p>
+                                 <pre class="syntax-html">
+/*Flex containers*/
+.main, .navbar{
+    display: flex;
+    flex-direction: column;
+}	
+                                </pre><br>
+                                <p>
+                                	As regras acima são para exibir nossos containers main e navbar em coluna, e aliás preste bem a atenção nos códigos a partir de agora, pois, você verá uma coisa muito interessante. 
+                                </p>
+                                <a class="bt bt-blue" href="" title="link-para-baixar-primeira-parte">BAIXE A PRIMEIRA PARTE DO PROJETO</a>
+                                <a class="bt bt-blue" href="">CONTINUE LENDO NA PARTE 2</a>
+							</div><!--/grid-card-->
+						</div>
+                    </div>
+                </article><!--/Article-->
+			</section>
+        </main><!--/main-->
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/main.js"></script>
+	</body>
+</html>
