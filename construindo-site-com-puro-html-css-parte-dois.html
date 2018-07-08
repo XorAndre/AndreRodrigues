@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="cleartype" content="on">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Construindo um site legal com apenas CSS e HTML</title>
+		<!--CSS-->
+		<link href="assets/css/main.css" rel="stylesheet">
+		<link href="https://unpkg.com/ionicons@4.2.4/dist/css/ionicons.min.css" rel="stylesheet">
+		<!--SEO-->
+		<link rel="canonical" href="construindo-site-com-puro-html-css.html">
+		<meta name="robots" content="index, follow">
+		<meta name="author" content="André Rodrigues(Xor)">
+		<meta name="description" content="Veja como é simples criar uma página para seu site usando apenas CSS e HTML">
+		<meta name="keywords" content="Como fazer um site, desenvolvendo páginas para web, sites, html, html5, css, css3">
+		<meta name="revisit-after" content="1 day">
+		<meta name="generator" content="N/A">
+	</head>
+	<body>		
+		<main class="main" role="main">
+		<nav class="navbar">
+				<div class="config-theme">
+					<button class="theme-options" id="escolha" title="Configuração do tema">
+						<i class="icon ion-md-more"></i>
+					</button>
+					<div class="container-config" id="revela-escolha">
+						<h3>CORES DO LAYOUT</h3>
+						<button class="bt bt-blue" id="none">PADRÃO</button>
+						<button class="bt bt-blue" id="escuro">ESCURO</button>
+					</div>                
+				</div>
+				<div class="container-nav">
+					<div class="foto" title="Foto Perfil" alt="foto-do-perfil"></div>
+					<logo>
+						<h1>ANDRÉ RODRIGUES</h1> </logo>
+					<div class="responsive" id="click-menu">
+						<div class="bars"></div>
+					</div>
+					<div class="links-container" id="mostrar">
+						<ul class="links" role="navigation">
+							<li><a href="index.html#top" title="Link início do site">Home</a></li>
+							<li><a href="index.html#about" title="Sobre o autor">About me</a></li>
+							<li><a href="index.html#projetos" title="Projetos realizados">Projetos Pessoais</a></li>
+							<li><a href="index.html#contribuicoes" title="Contribuições">Contribuições</a></li>
+							<li><a href="index.html#palestras" title="Contato para palestrar">Quer me chamar para palestrar :) ?</a></li>
+							<li><a href="index.htmlblog.html" title="Link para blog">Blog</a></li>
+							<h3>FERRAMENTAS ONLINE</h3>
+							<li><a href="geradorCrud.html" title="Link para blog">GERADOR DE CRUD</a></li>
+							<li><a href="blog.html" title="Link para blog">GERADOR DE COMPONENTES</a></li>
+						</ul>
+						<div class="container-social">
+							<h3>ACESSE MINHAS REDES SOCIAIS</h3>
+							<ul class="social"> <a href="https://www.facebook.com/Andre-Laurentino-Rodrigues-Xor-799179646936327/" target="_blank" title="Facebook"><i class="icon ion-logo-facebook"></i></a> <a href="https://plus.google.com/u/0/" target="_blank" title="Google"><i class="icon ion-logo-google"></i></a> <a href="https://www.linkedin.com/in/andre-laurentino-761855155/" target="_blank" title="Linkedin"><i class="icon ion-logo-linkedin"></i></a> <a href="https://twitter.com/AndreXor2017" target="_blank" title="Twitter"><i class="icon ion-logo-twitter"></i></a></ul>
+						</div>
+					</div>
+				</div>
+			</nav><!--/nav-->		
+			<section class="contents">
+				<header class="header" id="top">
+					<div class="overlay">
+						<div class="container">
+							<div class="row">
+								<div class="col-12">
+									<h2>Olá amigo, seja bem vindo ao meu site!</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header><!--/header-->
+				<article>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2>Construindo um site legal só com CSS e HTML (Parte-2)</h2>								
+                            </div>
+						</div>
+						<div class="row">							
+							<div class="col-12">            
+                                <p>
+                                    Já trabalhamos em nosso reset onde temos algumas regras globais. Vamos agora estilizar o nosso navbar.
+                                    Vendo a imagem abaixo podemos notar que nosso menu não está nos transmitindo uma cara boa não é?! 
+                                    Então vamos arruma-lo.
+                                </p>
+                                <img src="assets/img/print-html-3.png" alt="Imagem-do-menu-incio"><br><br>
+                                <h3>Trabalhando em nosso navbar</h3><br>
+                                <p>
+                                    Para deixar nosso menu com uma cara melhor iremos adicionar as seguintes regras globais:
+                                </p>
+								<pre class="syntax-html">
+                                    .navbar{
+                                        background-color: #fff;
+                                        box-shadow: 1px 1px 3px 1px rgba(51, 51, 51, 0.2588235294117647);
+                                        padding: 0.5em;
+                                        position: fixed;
+                                        width: 100%;
+                                    }
+                                    .navbar .logo h1, .navbar .links li> a{font-family: Arial, Helvetica, sans-serif;}
+                                    .navbar .logo{
+                                        margin-left: 1em;
+                                        padding: 0.2em 0 0 0;
+                                        width: 40%;
+                                    }
+                                    .navbar .logo h1{
+                                        color: #8bc34a;    
+                                        font-size: 2em;
+                                        font-weight: bold;
+                                        text-transform: uppercase;
+                                    }
+                                    .navbar .links li{padding: 0.8em 0.3em;}
+                                    .navbar .links li> a{
+                                        color: #333;
+                                        font-weight: 700;
+                                    }
+                                </pre><br>
+                                <p>
+                                    As regras globais acima são isoladas apenas apenas para nosso componente navbar, calma não 
+                                    fique confuso irei explicar sobre essa regra a parte. Está regra é chamada global pois pode 
+                                    ser aplicada tanta na versão desktop e mobile. todos nossos componentes terão regras globais.
+                                    E a segunda dica é: deixe sempre as configurações globais em primeiro lugar e em seguida as 
+                                    configurações isoladas isto é de cada filho do componente. E por falar em responsividade vamos agora 
+                                    agora aplicar algumas regras para telas mobile e desktop.  
+                                </p>
+                                <pre class="syntax-html">
+                                    /*Parte mobile*/
+                                    .navbar .button-responsive{
+                                        display: block;
+                                        width: 20%;
+                                    }
+                                    .navbar .links{display: none;}
+                                    /*Configuração telas 768px acima..*/
+                                    @media(min-width: 48em){
+                                        .navbar{flex-direction: row;}
+                                        .navbar .logo{
+                                            margin-left: 1em;
+                                            width: 40%;
+                                        }
+                                        .navbar .logo h1{font-size: 2em;}
+                                        .navbar .button-responsive{display: none;}
+                                        .navbar .links{
+                                            position: absolute;
+                                            right: 1em;
+                                            width: 38%;
+                                        }
+                                        .navbar .links li{display: inline-block;}
+                                    }
+                                </pre><br>
+                                <p>
+                                    Com as regras acima aplicadas já podemos notar que nosso menu já tem uma aparência 
+                                    melhor e também já tem um bom comportamento em relação a responsividade. E aí tá gostando dos resultados?
+                                    Agora vamos fazer a mágica de nosso menu responsivo acontecer, isso mesmo! Agora iremos
+                                    criar nosso primeiro efeito, e o bacana desse efeito que iremos fazer é que ele será com uma 
+                                    ação feita com puro css. Este efeito é muito comum usar toggle para revelar os links, mas como estamos 
+                                    brincando com CSS em um nível avançado, então iremos usar o target para efetuar a ação idêntica ao toggle, 
+                                    mas antes de fazermos está ação vamos deixar noss botão responsivo com uma carinha legal. Segue o código 
+                                    do menu:                                  
+                                </p>
+                                <pre class="syntax-html">
+                                    
+                                </pre>
+                                <a class="bt bt-blue" href="https://github.com/XorAndre/AndreRodrigues/tree/master/arquivos_tutos_aqui/meu_site" title="link-para-baixar-primeira-parte">BAIXE A PRIMEIRA PARTE DO PROJETO</a>
+                                <a class="bt bt-blue" href="">CONTINUE LENDO NA PARTE 2</a>
+							</div><!--/grid-card-->
+						</div>
+                    </div>
+                </article><!--/Article-->
+			</section>
+        </main><!--/main-->
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/main.js"></script>
+	</body>
+</html>
