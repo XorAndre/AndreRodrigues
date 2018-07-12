@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="cleartype" content="on">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>A nova sintaxe para mídias queryes</title>
+		<!--CSS-->
+		<link href="assets/css/main.css" rel="stylesheet">
+		<link href="https://unpkg.com/ionicons@4.2.4/dist/css/ionicons.min.css" rel="stylesheet">
+		<!--SEO-->
+		<link rel="canonical" href="materia-angular-7.html">
+		<meta name="robots" content="index, follow">
+		<meta name="author" content="André Rodrigues(Xor)">
+		<meta name="description" content="Confira algumas novidades que virão no Angular-7">
+		<meta name="keywords" content="Angular-7, angular, Angular, novidades-angular">
+		<meta name="revisit-after" content="1 day">
+		<meta name="generator" content="N/A">
+	</head>
+	<body>		
+		<main class="main" role="main">
+		<nav class="navbar">
+				<div class="config-theme">
+					<button class="theme-options" id="escolha" title="Configuração do tema">
+						<i class="icon ion-md-more"></i>
+					</button>
+					<div class="container-config" id="revela-escolha">
+						<h3>CORES DO LAYOUT</h3>
+						<button class="bt bt-blue" id="none">PADRÃO</button>
+						<button class="bt bt-blue" id="escuro">ESCURO</button>
+					</div>                
+				</div>
+				<div class="container-nav">
+					<div class="foto" title="Foto Perfil" alt="foto-do-perfil"></div>
+					<logo>
+						<h1>ANDRÉ RODRIGUES</h1> </logo>
+					<div class="responsive" id="click-menu">
+						<div class="bars"></div>
+					</div>
+					<div class="links-container" id="mostrar">
+						<ul class="links" role="navigation">
+							<li><a href="index.html#top" title="Link início do site">Home</a></li>
+							<li><a href="index.html#about" title="Sobre o autor">About me</a></li>
+							<li><a href="index.html#projetos" title="Projetos realizados">Projetos Pessoais</a></li>
+							<li><a href="index.html#contribuicoes" title="Contribuições">Contribuições</a></li>
+							<li><a href="index.html#palestras" title="Contato para palestrar">Quer me chamar para palestrar :) ?</a></li>
+							<li><a href="index.htmlblog.html" title="Link para blog">Blog</a></li>
+							<h3>FERRAMENTAS ONLINE</h3>
+							<li><a href="geradorCrud.html" title="Link para blog">GERADOR DE CRUD</a></li>
+							<li><a href="blog.html" title="Link para blog">GERADOR DE COMPONENTES</a></li>
+						</ul>
+						<div class="container-social">
+							<h3>ACESSE MINHAS REDES SOCIAIS</h3>
+							<ul class="social"> <a href="https://www.facebook.com/Andre-Laurentino-Rodrigues-Xor-799179646936327/" target="_blank" title="Facebook"><i class="icon ion-logo-facebook"></i></a> <a href="https://plus.google.com/u/0/" target="_blank" title="Google"><i class="icon ion-logo-google"></i></a> <a href="https://www.linkedin.com/in/andre-laurentino-761855155/" target="_blank" title="Linkedin"><i class="icon ion-logo-linkedin"></i></a> <a href="https://twitter.com/AndreXor2017" target="_blank" title="Twitter"><i class="icon ion-logo-twitter"></i></a></ul>
+						</div>
+					</div>
+				</div>
+			</nav><!--/nav-->		
+			<section class="contents">
+				<header class="header" id="top">
+					<div class="overlay">
+						<div class="container">
+							<div class="row">
+								<div class="col-12">
+									<h2>Olá amigo, seja bem vindo ao meu site!</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header><!--/header-->
+				<article>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2>Cases de estudos com novas mídias queryes</h2>								
+                            </div>
+						</div>
+						<div class="row">							
+							<div class="col-12">                            
+                                <img src="https://i0.wp.com/www.silocreativo.com/wp-content/uploads/2016/11/media-query-css.png?resize=666%2C500&quality=100&strip=all" alt="imagem-mídias-queryes">
+                                <p>
+                                    Design responsivo já não é novidade para ninguém do mundo da web. E quando falamos sobre responsividade muitas coisas caem dentro dessa forma de trabalho que até veio para melhorar a vida de todos nesse fantástico mundo da web. No post de hoje mostrarei alguns estudos que venho fazendo em cima das mídias queryes que são as responsáveis por deixar nossos layouts de forma correta desde telas até mesmo na hora de imprimir. 
+                                </p><br>
+                                <h3>Modelos de mídias queryes</h3><br>
+                                <p>
+                                     Antes de falar sobre as atuais mídias queryes vamos falar um pouco sobre as mídias types que foram o início de tudo. Se você ainda não conhece elas são responsáveis por definir uma folha de estilo específica para um determinado tipo de mídia veja abaixo um exemplo de mídia type.
+                                </p>                             
+                                <pre class="syntax-html">
+                                    uso dreto no HTML
+                                    <link rel="stylesheet" href="impressao.css" type="text/css" media="print">
+                                    ou caso queira usar dentro do CSS
+                                    @media print{
+                                        regras para impressão vão aqui
+                                    }
+                                </pre>
+                                <p>
+                                    No exemplo acima temos uma mídia type para impressão, as regras dentro da folha de estilo só serão aplicadas para impressão de arquivos. Além desta também temos medias types para TVs, braille, projetores, portátil (destinada aos dispositivos móveis), telas de computadores, relevo e aural (atualmente obsoleta).  Apesar das opções de medias types serem boas para trabalhar com um determinado tipo de tecnologia ou impressão, os dispositivos vêm evoluindo bastante e somente essas médias type já não são o suficiente para darmos o nosso usuário uma experiência legal. Para isso vieram as mídias queryes (Consultas de mídias) que nos permite através de uma expressão lógica consultar os variados tipos de dispositivos cobertos pelas medias types. Veja o exemplo a seguir de um modelo antigo de mídia querye.
+                                </p>
+                                <pre class="syntax-html">
+                                    @media screen and (max-width: 320px){
+                                     Regra que será aplicada...
+                                    } 
+                                    @media screen and (min-width: 768px){
+                                     Regra que será aplicada...
+                                    }     
+
+                                </pre>
+                                <p>
+                                    O modelo acima já não é mais tanto utilizado por desenvolvedores e também as versões mais recentes dos navegadores já apresentam ao reconhecer esse padrão. Atualmente o padrão ´recomendável é este:
+                                </p>
+                                <pre class="syntax-html">                                    
+                                    @media(max-width: 320px){
+                                        Regra aqui..
+                                    }
+                                    @media(min-width: 768px){
+                                    Regra aqui..
+                                    }
+                                </pre>
+                                <h3>Indo um pouco mais além com nossas mídias queryes </h3>
+                                <p>
+                                    Indo mais além podemos com nossas mídias queryes podemos substituir o pixel por outras medias como é o caso da medida (em), veja:
+                                </p>
+                                <pre class="syntax-html">                                    
+                                   @media(min-width: 48em){
+                                        Regra aqui..
+                                    }
+
+                                </pre>
+                                <p>
+                                    A media querye acima será aplicada para telas acima de 768px, mas ao invés de usarmos a medida (px) adotamos o valor na medida (em). Veja abaixo outros casos de uso.
+                                </p>
+                                <a href="exemplos-midia-queryes.html" class="bt bt-blue" target="_blank">CONFIRA OS EXEMPLOS DE MEDIDAS</a><br>
+                                <h3>As novas Media Queries Level 4</h3>
+                                <p>
+                                    Agora também podemos contar as novas sintaxes das mídias queryes que permitem um trabalho simplificado e com uso de operadores matemáticos. Veja este exemplo: 
+                                </p>
+                                <pre class="syntax-html">
+                                    @media(width >= 78em)
+                                    ..
+                                    Está mídia querye equivale a isto:
+                                     @media(min-width: 78em){
+                                        ..
+                                    }
+                                </pre>
+                                <p>Você pode até encadear estes juntos assim:
+                                <pre class="syntax-html">
+                                (50em =< width <= 78em)...
+                                </pre>
+                                <p>Também temos este exemplo de mídia querye novo</p></p>
+                                <pre class="syntax-html">                                    
+                                   @media((min-width: 78em) or (min-width: 120em))
+                                       and 
+                                       (not (pointer: none)){
+                                           regras aplicadas aqui
+                                       }
+                                </pre>
+                                <p>
+                                    O modelo acima ainda não é 100% recomendável, mas você já pode ir testando novos navegadores.   
+                                </p>
+                                <h3>Conclusão</h3>
+                                <p>
+                                    O CSS é incrível e a cada vez mais vem nos trazendo novidades incríveis. 
+                                    Acredito que iremos chegar a um CSS que faça 80% das coisas que o antigo JavaScript fez. Claro pode demorar alguns anos, mas é um tempo que vale a pena eperar. Se bem que hoje com as novas propriedades ajudando esse tempo está diminuindo. Para finalizar quero dizer que quando me referi a fazer coisas que o JavaScript fez é questão animações e eventos. Validações de formulários o JavaScript ainda será responsável. Bom espero que tenha gostado e até o próximo post.      
+                                </p>
+							</div><!--/grid-card-->
+						</div>
+                    </div>
+                </article><!--/Article-->
+			</section>
+        </main><!--/main-->
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/main.js"></script>
+	</body>
+</html>

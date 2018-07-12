@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.main{
+    margin: 0 auto;
+    padding: 0.90em;
+    width: 90%;
+}
+.medida-cm, .medida-em, .medida-rem, .medida-in{
+    background-color: #eee;
+    border-radius: 3px;    
+    font-family: sans-serif;
+    padding: 0.90em;
+}
+.medida-em, .medida-in{color:#a0a0a0;}
+@media(min-width: 78em){    
+    .medida-em{
+        background-color: crimson;        
+    }
+}
+@media(min-width: 30rem){    
+    .medida-rem{
+        background-color: blue;
+        color: #eee;       
+    }
+}
+@media(min-width: 25cm){    
+    .medida-cm{
+        background-color: yellow;
+        color: #333;
+    }
+}
+@media(max-width: 30in){    
+    .medida-in{
+        background-color: green;        
+    }
+}
