@@ -1,0 +1,15 @@
+form{
+    box-shadow: var(--sombra);
+    margin: 0 auto;
+    padding: 0.8em;
+    width: 90%;
+}
+input[type="text"], input[type="email"], input[type="submit"] textarea, select{
+    display: block;
+} 
+input[type="text"], input[type="email"], textarea, select{
+    border: 0.02em solid rgba(51, 51, 51, 0.17);
+    margin-bottom: 0.8em;
+    padding: 0.8em 0.5em;
+    width: 100%;
+}

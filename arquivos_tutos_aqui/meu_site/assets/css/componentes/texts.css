@@ -1,0 +1,16 @@
+/*imports*/
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+/*root vars*/
+:root{
+    --raleway: 'Raleway', sans-serif;
+    --source: 'Source Sans Pro', sans-serif;
+}
+/*Textos*/
+* a, * p{font-family: var(--raleway);}
+* h2, * h3{  
+    font-family: var(--source);
+}
+* h2{font-size: 2em;}
+* h3{font-size: 1.3em;}
+.text-center{text-align: center;}

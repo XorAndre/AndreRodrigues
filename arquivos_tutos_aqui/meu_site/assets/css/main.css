@@ -1,3 +1,12 @@
 @import url("componentes/reset.css");
+@import url("componentes/cores.css");
+@import url("componentes/texts.css");
+@import url("componentes/button.css");
+@import url("componentes/cards.css");
 @import url("componentes/navbar.css");
 @import url("componentes/header.css");
+@import url("componentes/grids.css");
+@import url("componentes/sections.css");
+@import url("componentes/shapes.css");
+@import url("componentes/form.css");
+@import url("componentes/footer.css");

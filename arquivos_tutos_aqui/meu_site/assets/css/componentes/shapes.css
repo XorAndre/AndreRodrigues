@@ -1,0 +1,21 @@
+.shape{
+    background-color: #f44336;
+    -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    height: 12em;
+    margin: 0 auto;
+    position: relative;
+    width: 12em;
+}
+.shape img{    
+    position: absolute;
+    left: 2.50em;
+    top: 2em;
+    width: 56%;
+}
+@media(min-width: 48em){
+    .shape{
+        height: 9.30em;
+        width: 10em;
+    }
+}

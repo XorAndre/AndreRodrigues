@@ -11,7 +11,22 @@ audio, img, iframe, video{
     display: inline-block;
     width: 100%;
 }
+body::-webkit-scrollbar-track{background-color:#F4F4F4}
+* body::-webkit-scrollbar{width:6px;background-color:var(--verde)}
+* body::-webkit-scrollbar-thumb{background-color:var(--verde)}
+/*containers*/
+.header .main, .navbar{
+    width: 100%;
+}
 /*Flex containers*/
-.main, .navbar{
+.container, .main, .navbar, .row{
     display: flex;    
+}
+.container, .main, .row{
+    flex-direction: column;
+}
+@media(min-width: 48em){
+    .navbar, .row{
+        flex-direction: row;
+    }
 }

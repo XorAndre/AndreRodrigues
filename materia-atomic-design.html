@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="cleartype" content="on">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Trabalando com Atomic Design</title>
+		<!--CSS-->
+		<link href="assets/css/main.css" rel="stylesheet">
+		<link href="https://unpkg.com/ionicons@4.2.4/dist/css/ionicons.min.css" rel="stylesheet">
+		<!--SEO-->
+		<link rel="canonical" href="materia-atomic-design.html">
+		<meta name="robots" content="index, follow">
+		<meta name="author" content="André Rodrigues(Xor)">
+		<meta name="description" content="Conheça um pouco sobre a metodologia Atomic Design">
+		<meta name="keywords" content="Atomic Design, atomic design, Brad Frost">
+		<meta name="revisit-after" content="1 day">
+		<meta name="generator" content="N/A">
+	</head>
+	<body>		
+		<main class="main" role="main">
+		<nav class="navbar">
+				<div class="config-theme">
+					<button class="theme-options" id="escolha" title="Configuração do tema">
+						<i class="icon ion-md-more"></i>
+					</button>
+					<div class="container-config" id="revela-escolha">
+						<h3>CORES DO LAYOUT</h3>
+						<button class="bt bt-blue" id="none">PADRÃO</button>
+						<button class="bt bt-blue" id="escuro">ESCURO</button>
+					</div>                
+				</div>
+				<div class="container-nav">
+					<div class="foto" title="Foto Perfil" alt="foto-do-perfil"></div>
+					<logo>
+						<h1>ANDRÉ RODRIGUES</h1> </logo>
+					<div class="responsive" id="click-menu">
+						<div class="bars"></div>
+					</div>
+					<div class="links-container" id="mostrar">
+						<ul class="links" role="navigation">
+							<li><a href="index.html#top" title="Link início do site">Home</a></li>
+							<li><a href="index.html#about" title="Sobre o autor">About me</a></li>
+							<li><a href="index.html#projetos" title="Projetos realizados">Projetos Pessoais</a></li>
+							<li><a href="index.html#contribuicoes" title="Contribuições">Contribuições</a></li>
+							<li><a href="index.html#palestras" title="Contato para palestrar">Quer me chamar para palestrar :) ?</a></li>
+							<li><a href="index.htmlblog.html" title="Link para blog">Blog</a></li>
+							<h3>FERRAMENTAS ONLINE</h3>
+							<li><a href="geradorCrud.html" title="Link para blog">GERADOR DE CRUD</a></li>
+							<li><a href="blog.html" title="Link para blog">GERADOR DE COMPONENTES</a></li>
+						</ul>
+						<div class="container-social">
+							<h3>ACESSE MINHAS REDES SOCIAIS</h3>
+							<ul class="social"> <a href="https://www.facebook.com/Andre-Laurentino-Rodrigues-Xor-799179646936327/" target="_blank" title="Facebook"><i class="icon ion-logo-facebook"></i></a> <a href="https://plus.google.com/u/0/" target="_blank" title="Google"><i class="icon ion-logo-google"></i></a> <a href="https://www.linkedin.com/in/andre-laurentino-761855155/" target="_blank" title="Linkedin"><i class="icon ion-logo-linkedin"></i></a> <a href="https://twitter.com/AndreXor2017" target="_blank" title="Twitter"><i class="icon ion-logo-twitter"></i></a></ul>
+						</div>
+					</div>
+				</div>
+			</nav><!--/nav-->		
+			<section class="contents">
+				<header class="header" id="top">
+					<div class="overlay">
+						<div class="container">
+							<div class="row">
+								<div class="col-12">
+									<h2>Olá amigo, seja bem vindo ao meu site!</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header><!--/header-->
+				<article>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2>Atomic Design desenvolvendo de forma ágil e simples</h2>								
+                            </div>
+						</div>
+						<div class="row">							
+							<div class="col-12"> 
+                                <p>
+                                    No post de hoje falaremos sobre Atomic Design, uma metologia criada por Brad Frost com finalidade de aumentar e simplificar produção de páginas web. Antes de começar a falar sobre está incrível metologia gostaria de indicar um grupo de desenvolvimento web o nome é: (Desenvolvimento WEB - Do iniciante ao avançado), este grupo tem como foco ajudar desde novatos e até mesmo os mais experientes na área que tem dúvidas ou buscam aprender algo novo. Bom sem mais delongas vamos ao post.
+                                    Talvez Brad Frost já tivesse uma visão do que a web se tornaria hoje, com páginas melhores projetadas e usando cada vez mais componentes detalhados. Uma das frases que se destacam nesse projeto e que por sinal está no topo da página é: 
+                                </p>
+                                <blockquote cite="http://developer.mozilla.org">
+                                  <p>
+                                      Não estamos criando páginas, estamos projetando sistemas de componentes.
+                                  </p>
+                                </blockquote><br> 
+                                <p>
+                                    Para que você possa entender melhor como funciona o Atomic Design aqui está uma imagem que demonstra as estapas de desenvolvimento.
+                                </p>    
+                                <img src="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/336d3a9e-40fa-4b44-9677-0f41fde9f1c1/guide-ui-design-atomic-design.png" alt="imagem-explicativa-do-Atomic-design"><br><br>
+                                <h3>Explicação de cada etapa</h3><br>                         
+                                <h4>Atoms</h4>
+                                <p>
+                                    Caso não saiba átomos são unidades básica da matéria presente no nosso espaço. Eles são componentes de moléculas e da matéria comum (Isso dentro da Química), mas que serve como base para o entendimento do Atomic Design. Na metologia podemos dizer que esses nossos átomos são nossos “objetos de tags” representados por exemplo por um input de um formulário, cores e até mesmos tipos de fontes Até então Brad Frost demonstra isso em seu site (http://bradfrost.com/blog/post/atomic-web-design/). 
+                                </p><br>
+                                <h4>Molecules</h4>
+                                <p>
+                                    Como estamos seguindo um exemplo a partir de um input não irei sair desse rumo. As moléculas são átomos são espécies químicas neutras que são formadas por pelo menos dois átomos que no nosso exemplo podemos colocar um input de pesquisa mais um input do tipo submit. 
+                                </p><br>
+                                <h4>Organisms</h4>
+                                <p>
+                                    Depois de obtermos as moléculas, então vem agora a parte de combinação de vários grupos de moléculas para termos nosso organismo como no exemplo do próprio site do Brad Frost um simples cabeçalho.
+                                </p><br>
+                                <h4>Templates</h4>
+                                <p>
+                                    Estamos quase em nossa etapa final de criação. Vamos agora a parte de template. O template é formado por vários organismos, mas se analisarmos bem quando chegamos em nosso modelo quebramos a analogia química que até então estavamos tendo até o momento, só que simplifica melhor o entendimento para nossos clientes.
+                                </p><br>
+                                <h4>Pages</h4>
+                                <p>
+                                    Por fim chegamos a nossa parte final. O resultado de nossas combinações anteriores que nos retorna um resultado para podermos finalizar nossa interface. Nessa etapa iremos colocar backgrounds e adequar o design em cima da imagem da empresa. Geralmente este processo é o mais demorado, pois, acertar a harmonia não é lá uma das tarefas mais faceis de serem feitas. 
+                                </p><br>
+                                <h3>Conclusão</h3>  
+                                <p>
+                                    O Atomic design foi algo incrível feito pelo Brad Frost e sua equipe! Simplifica bastante no desenvolvimento de sistemas de design, mas assim como qualquer outra metologia deve ser bem estudada em certos cases. Bom por hoje foi só espero que tenha gostado e até próximo post :).
+                                </p>                               
+							</div><!--/grid-card-->
+						</div>
+                    </div>
+                </article><!--/Article-->
+			</section>
+        </main><!--/main-->
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/main.js"></script>
+	</body>
+</html>

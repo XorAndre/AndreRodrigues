@@ -1,0 +1,8 @@
+section .container{padding: 3em 0;}
+.menu{background-color: #f7f7f7b3;}
+@media(min-width: 48em){
+    section .pizzaiolo{
+        height: 25em;
+        width: 65%;
+    }
+}

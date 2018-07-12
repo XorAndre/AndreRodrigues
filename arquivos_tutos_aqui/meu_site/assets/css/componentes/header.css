@@ -1,4 +1,30 @@
-header{
-    background-color: green;
-    min-height: 30em;
+.header{
+    background-image: url(../../img/header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 15em; 
+    text-transform: uppercase;
+}
+.header .container{padding: 3em 0;}
+.header .container h2{
+    background-color: rgba(139, 195, 74, 0.68);
+    color: #fff;
+    font-family: var(--source);
+    font-size: 1.1em;
+    padding: 0.9em;
+}
+@media(min-width: 48em){
+    .header{
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .header .container{padding: 16em 0;}
+    .header .container h2{
+        background-color: transparent;
+        color: #333;
+        font-family: fantasy;
+        font-size: 3em;
+        padding: 0;
+    }
 }
